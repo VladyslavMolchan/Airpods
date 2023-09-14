@@ -9,50 +9,72 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header class="header">
+
+<header class="header">
   <div class="container">
     <div class="header__top">
       <a href="#" class="logo">
         <img src="./images/Logo.svg" alt="Logo">
       </a>
+
       <nav class="menu" id="nav">
-        <ul class="menu__list active">
-         
+        <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">Info</a>
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">Product</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#" class="menu__link">Contacts</a>
             </li>
             <li class="menu__item">
-              <button href="#" class="menu__btn">BUY</button>
+              <button href="#" class="menu__btn">buy</button>
             </li>
         </ul>
         <div class="menu__burger" id="menuIcon">
           <div class="menu__burger-symbol" id="hamburgerIcon"></div>
         </div>
+
+        <div class="overlay" id="overlay">
+          <div class="overlay-content">
+            <ul class="overlay__list">
+              <li class="overlay__item">
+                <a href="#">Info</a>
+              </li>
+              <li class="overlay__item">
+                <a href="#">Product</a>
+              </li>
+              <li class="overlay__item">
+                <a href="#">Contacts</a>
+              </li>
+              <li class="overlay__item">
+                <button class="overlay-button" href="#">buy</button>
+              </li>
+            </ul>
+            <span class="close" id="closeOverlay">&times;</span>
+          </div>
+        </div>
       </nav>
     </div>
-
-
 
     <div class="header__content">
       <h1 class="title">
         <span class="title--air">Air</span><span class="title--pod">Pod</span><span class="title--s">S</span><span class="title--m">M</span><span class="title--ax">AX</span>
       </h1>
+
       <div class="header__content-images">
-        <!-- <img src="./images/airpods-pink.png" alt="image"> -->
-        <img src="./images/airpods-skyblue.png" alt="image">
-        <!-- <img src="./images/airpods-spacegray.png" alt="image"> -->
-        <!-- <img src="./images/airpods-green.png" alt="image"> -->
-        <!-- <img src="./images/airpods-white.png" alt="image"> -->
+        <img class="content-item content-item__active color--skyblue" src="./images/airpods-skyblue.png" alt="image">
+        <img class="content-item color--pink" src="./images/airpods-pink.png" alt="image">
+        <img class="content-item color--spacegray" src="./images/airpods-spacegray.png" alt="image">
+        <img class="content-item color--green" src="./images/airpods-green.png" alt="image">
+        <img class="content-item color--white" src="./images/airpods-white.png" alt="image">
       </div>
+
     </div>
   </div>
 </header>
+
 <main>
   <section class="choose-color">
     <div class="container">
@@ -60,25 +82,28 @@
       <p class="choose-color__text">The perfect balance between the purityof hi‑fi and the magic of AirPods.
         The ultimate personal audio experience.
       </p>
+
       <div class="choose-color__list">
-       <!--  <button class="choose__color-btn">
+        <button class="choose__color-btn choose__color-btn--active" data-button="color--skyblue">
           <img src="./images/btn-skyblue.png" alt="airpods">
-        </button> -->
-        <button class="choose__color-btn">
+        </button>
+        <button class="choose__color-btn" data-button="color--pink">
           <img src="./images/btn-pink.png" alt="airpods">
         </button>
-        <button class="choose__color-btn">
+        <button class="choose__color-btn" data-button="color--green">
           <img src="./images/btn-green.png" alt="airpods">
         </button>
-        <button class="choose__color-btn">
+        <button class="choose__color-btn" data-button="color--spacegray">
           <img src="./images/btn-spacegray.png" alt="airpods">
         </button>
-        <button class="choose__color-btn">
+        <button class="choose__color-btn" data-button="color--white">
           <img src="./images/btn-white.png" alt="airpods">
         </button>
       </div>
+
     </div>
   </section>
+
   <section class="composition">
     <div class="container">
       <h2 class="composition__title main__title">
@@ -87,6 +112,7 @@
       <p class="composition__text">
         Introducing the reinvention of over-the-ear headphones. From the cushion to the headband, the AirPods Max are designed with acoustic insulation in mind, adapted to many head shapes, so you can immerse yourself in the purity of sound.
       </p>
+
         <div class="composition__inner">
           <div class="composition__inner-text">
             <p>The headband is made of breathable mesh, distributing the weight to reduce pressure on the head.
@@ -96,14 +122,15 @@
             <p>The telescoping arms expand and stay in any position you want, allowing you to maintain fit and isolation.
             </p>
           </div>
-          <img src="./images/side-skyblue.jpg" alt="">
-       <!--    <img src="./images/side-green.jpg" alt="">
-          <img src="./images/side-pink.jpg" alt="">
-          <img src="./images/side-spacegray.jpg" alt="">
-          <img src="./images/side-white.jpg" alt=""> -->
+          <img class="content-item content-item__active color--skyblue" src="./images/side-skyblue.jpg" alt="">
+          <img class="content-item  color--green" src="./images/side-green.jpg" alt="">
+          <img class="content-item  color--pink" src="./images/side-pink.jpg" alt="">
+          <img class="content-item  color--spacegray" src="./images/side-spacegray.jpg" alt="">
+          <img class="content-item  color--white" src="./images/side-white.jpg" alt="">
         </div>
       </div>
     </section>
+
     <section class="case">
       <div class="container">
         <h2 class="case__title main__title">
@@ -112,11 +139,11 @@
         <p class="case__text">
           When stored in the sleek and lightweight Smart Case , AirPods Max enter a low-power state to save energy.
         </p>
-        <img src="./images/case-skyblue.jpg" alt="">
-       <!--  <img src="./images/case-pink.jpg" alt="">
-        <img src="./images/case-green.jpg" alt="">
-        <img src="./images/case-spacegray.jpg" alt="">
-        <img src="./images/case-white.jpg" alt=""> -->
+        <img class="content-item content-item__active color--skyblue" src="./images/case-skyblue.jpg" alt="">
+        <img class="content-item color--pink" src="./images/case-pink.jpg" alt="">
+        <img class="content-item color--green" src="./images/case-green.jpg" alt="">
+        <img class="content-item color--spacegray" src="./images/case-spacegray.jpg" alt="">
+        <img class="content-item color--white" src="./images/case-white.jpg" alt="">
         <h2 class="energy__title main__title">
           Stayin' alive, stayin' alive.
         </h2>
@@ -126,6 +153,7 @@
         </p>
       </div>
     </section>
+
     <section class="audio">
       <div class="container">
         <div class="audio__inner">
@@ -147,6 +175,7 @@
       </div>
     </section>
 </main>
+
 <footer class="footer">
   <div class="container">
     <a href="#" class="footer__link">
